@@ -1,0 +1,40 @@
+CyberDefenders | Insider | Challenge Walkthrough
+
+Scenario:
+After Karen started working for 'TAAUSAI,' she began to do some illegal activities inside the company. 'TAAUSAI' hired you to kick off an investigation on this case.
+
+You acquired a disk image and found that Karen uses Linux OS on her machine. Analyze the disk image of Karen's computer and answer the provided questions.
+
+Walkthrough:
+#1	What distribution of Linux is being used on this machine?
+Ans:	Kali linux distribution – this is found in the boot directory of the linux file system when you mount the given AD1 image in FTK imager. Note: boot directory stores the kernel and init files of the distribution that will help in boot up process.
+
+#2	What is the MD5 hash of the apache access.log?
+Ans:	d41d8cd98f00b204e9800998ecf8427e – go to the location of apache access log file (var->apache2->access.log), right click on the access.log file and export file hash list to the desired location on your computer. This will give the md5 and sha1 hash of the file in csv format.
+
+#3	It is believed that a credential dumping tool was downloaded? What is the file name of the download?
+Ans:	mimikatz_trunk.zip – can be found in downloads folder of root user account.
+
+#4	There was a super-secret file created. What is the absolute path?
+Ans:	/root/Desktop/SuperSecretFile.txt – can be found from the bash history file.
+
+#5	What program used didyouthinkwedmakeiteasy.jpg during execution?
+Ans:	binwalk – can be found from the bash history file.
+
+#6	What is the third goal from the checklist Karen created?
+Ans:	profit – can be found in checklist file present in Desktop folder.
+
+#7	How many times was apache run?
+Ans:	0 – from my understanding, if you observe the apache2 log files size, it is of size 0 bytes, which I think is possible only if apache is never run.
+
+#8	It is believed this machine was used to attack another. What file proves this?
+Ans:	irZLAohL.jpeg – can be found in root folder.
+
+#9	Within the Documents file path, it is believed that Karen was taunting a fellow computer expert through a bash script. Who was Karen taunting?
+Ans:	young – can be found in firstscript_fixed file present inside myfirsthack folder under Documents directory.
+
+#10	A user su'd to root at 11:26 multiple times. Who was it?
+Ans:	postgres – can be found from auth.log in /var/log/ directory. Note: auth.log stores the authentication logs of linux system.
+
+#11	Based on the bash history, what is the current working directory?
+Ans:	/root/Documents/myfirsthack/ - as question suggests, this can be found from the bash history file.
