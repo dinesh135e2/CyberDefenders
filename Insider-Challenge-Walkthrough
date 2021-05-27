@@ -6,6 +6,9 @@ After Karen started working for 'TAAUSAI,' she began to do some illegal activiti
 You acquired a disk image and found that Karen uses Linux OS on her machine. Analyze the disk image of Karen's computer and answer the provided questions.
 
 Walkthrough:
+
+Use FTK imager to mount the downloaded AD1 image and follow along the walkthrough
+
 #1	What distribution of Linux is being used on this machine?
 Ans:	Kali linux distribution – this is found in the boot directory of the linux file system when you mount the given AD1 image in FTK imager. Note: boot directory stores the kernel and init files of the distribution that will help in boot up process.
 
